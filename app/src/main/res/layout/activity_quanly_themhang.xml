@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#D66E91"
+    tools:context=".Activity.Quanly_themhang">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_full"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.drawerlayout.widget.DrawerLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/drawerlayout"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="30">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:background="#f00"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageButton
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_baseline_menu_24"
+                                        android:background="@null"
+                                        android:scaleType="fitXY"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/imgbt_menu"/>
+
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:fontFamily="@font/bevan"
+                                            android:text="Quản lý thêm hàng"
+                                            android:textColor="#89FF00"
+                                            android:textSize="30dp" />
+
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tên sản phẩm"
+                                        android:textSize="20dp"
+                                        android:textColor="@color/white"/>
+
+                                    <EditText
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shape_bgr_edt_dangnhap"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/edt_tensp"/>
+
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Giá"
+                                        android:textSize="20dp"
+                                        android:textColor="@color/white"/>
+
+                                    <EditText
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shape_bgr_edt_dangnhap"
+                                        android:textColor="@color/white"
+                                        android:inputType="number"
+                                        android:id="@+id/edt_giasp"/>
+
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mô tả"
+                                        android:textSize="20dp"
+                                        android:textColor="@color/white"/>
+
+                                    <EditText
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shape_bgr_edt_dangnhap"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/edt_mota"/>
+
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_marginTop="10dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Loại sản phẩm"
+                                            android:textSize="20dp"
+                                            android:id="@+id/txt_loaisp"
+                                            android:textColor="@color/white"/>
+
+                                        <Spinner
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:spinnerMode="dialog"
+                                            android:id="@+id/spiner_loaisp"/>
+
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:gravity="center_horizontal">
+
+                                        <ImageView
+                                            android:layout_width="200dp"
+                                            android:layout_height="200dp"
+                                            android:src="@drawable/ic_baseline_image_24"
+                                            android:background="@null"
+                                            android:layout_marginTop="10dp"
+                                            android:id="@+id/img_anhsp"/>
+
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal">
+
+                                        <Button
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Lưu sản phẩm"
+                                            android:background="@drawable/shape_bgr_button_dangnhap"
+                                            android:textColor="@color/white"
+                                            android:layout_marginBottom="10dp"
+                                            android:id="@+id/bt_themsp"/>
+
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </ScrollView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.drawerlayout.widget.DrawerLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/bottom_menu"
+                    app:menu="@menu/menu_bottom_quanly"
+                    android:background="@color/white"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F8E42E"
+            android:layout_gravity="start"
+            android:id="@+id/navigationview">
+
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_menu"/>
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

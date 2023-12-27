@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Chưa xử lý"
+        android:id="@+id/chuaxuly"/>
+
+    <item
+        android:title="Đã xử lý"
+        android:id="@+id/daxuly"/>
+
+</menu>

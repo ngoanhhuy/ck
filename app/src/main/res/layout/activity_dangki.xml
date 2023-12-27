@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#82A4D8"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Dangki">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:weightSum="3" >
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_weight="2">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/asset"
+                   android:text="Welcome"
+                   android:textStyle="italic"
+                   android:textColor="@color/white"
+                   android:textSize="30dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/asset"
+                   android:text="Thế giới điện tử"
+                   android:textColor="@color/white"
+                   android:layout_marginTop="10dp"
+                   android:textSize="25dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:fontFamily="@font/bevan"
+                   android:text="ĐĂNG KÍ"
+                   android:textColor="@color/white"
+                   android:textSize="30dp" />
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               android:orientation="vertical">
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="50dp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Tên tài khoản"
+                       android:textSize="20dp"
+                       android:textColor="@color/white"/>
+
+                   <EditText
+                       android:layout_width="300dp"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:background="@drawable/shape_bgr_edt_dangnhap"
+                       android:id="@+id/txt_tentk"/>
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Số điện thoại"
+                       android:textSize="20dp"
+                       android:textColor="@color/white"/>
+
+                   <EditText
+                       android:layout_width="300dp"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:background="@drawable/shape_bgr_edt_dangnhap"
+                       android:id="@+id/txt_sdt"/>
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Mật khẩu"
+                       android:textSize="20dp"
+                       android:textColor="@color/white"/>
+
+                   <EditText
+                       android:layout_width="300dp"
+                       android:layout_height="wrap_content"
+                       android:inputType="textPassword"
+                       android:textColor="@color/black"
+                       android:background="@drawable/shape_bgr_edt_dangnhap"
+                       android:id="@+id/edt_passwork"/>
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Nhập lại mật khẩu"
+                       android:textSize="20dp"
+                       android:textColor="@color/white"/>
+
+                   <EditText
+                       android:layout_width="300dp"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:inputType="textPassword"
+                       android:background="@drawable/shape_bgr_edt_dangnhap"
+                       android:id="@+id/edt_passwork2"/>
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:orientation="horizontal">
+
+                   <Button
+                       android:layout_width="150dp"
+                       android:layout_height="wrap_content"
+                       android:text="Trở về"
+                       android:background="@drawable/shape_bgr_button_dangnhap"
+                       android:textColor="@color/white"
+                       android:id="@+id/bt_trove"/>
+
+                   <Button
+                       android:layout_marginLeft="10dp"
+                       android:layout_width="150dp"
+                       android:layout_height="wrap_content"
+                       android:text="Đăng kí"
+                       android:background="@drawable/shape_bgr_button_dangnhap"
+                       android:textColor="@color/white"
+                       android:id="@+id/bt_dangki"/>
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+   </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

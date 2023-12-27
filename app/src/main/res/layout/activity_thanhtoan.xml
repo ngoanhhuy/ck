@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5pt"
+    tools:context=".Activity.Thanhtoan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                    android:id="@+id/img_sp"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên sản phẩm"
+                        android:layout_gravity="center"
+                        android:textColor="#f00"
+                        android:textSize="20dp"
+                        android:id="@+id/txt_tensp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giá: "
+                        android:layout_marginTop="5pt"
+                        android:textSize="15dp"
+                        android:textStyle="italic"
+                        android:textColor="#f00"
+                        android:id="@+id/txt_giasp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mô tả"
+                        android:layout_marginTop="5pt"
+                        android:textSize="15dp"
+                        android:id="@+id/txt_motasp"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5pt"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ giao hàng"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_bgr_edt_dangnhap"
+                    android:id="@+id/edt_diachi"/>
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại nhận hàng"
+                    android:layout_marginTop="5pt"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_bgr_edt_dangnhap"
+                    android:id="@+id/edt_sdt"/>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên người nhận"
+                    android:layout_marginTop="5pt"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_bgr_edt_dangnhap"
+                    android:id="@+id/edt_tennhan"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:text="* Hiện tại chỉ hỗ trợ hình thức thanh toán code \n
+Các hình thức thanh toán khác sẽ sớm được phát triển"
+                    android:textStyle="italic"
+                    android:textColor="#f00"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:layout_margin="10pt"
+                    android:padding="10pt"
+                    android:background="@drawable/shape_vien_list_uudai"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tiền hàng: "
+                        android:textColor="#f00"
+                        android:textSize="20dp"
+                        android:id="@+id/txt_tienhang"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phí ship: 30.000 vnd"
+                        android:textColor="#f00"
+                        android:layout_marginTop="3dp"
+                        android:textSize="20dp"
+                        android:id="@+id/txt_tienship"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng tiền: "
+                        android:textColor="#f00"
+                        android:textSize="20dp"
+                        android:id="@+id/txt_tong"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đặt hàng"
+                    android:layout_margin="5pt"
+                    android:background="@drawable/shape_bgr_button_dangnhap"
+                    android:textColor="@color/white"
+                    android:id="@+id/bt_dathang"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

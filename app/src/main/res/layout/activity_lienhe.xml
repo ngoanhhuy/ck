@@ -1,0 +1,85 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="30"
+    android:background="#F4F1F1"
+    tools:context=".Activity.Lienhe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#2196F3"
+                android:textSize="30dp"
+                android:text="Hệ Thống Bán Hàng Online"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#2196F3"
+                android:textSize="30dp"
+                android:text="Thế Giới Điện Tử"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="25dp"
+                android:textColor="#2196F3"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="LIÊN HỆ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:text="  Nếu khách hàng có thắc mắc gì về sản phẩm hoặc cần tư vấn về sản phẩm hãy CLICK nút liên hệ bên dưới để được các nhân viên tư vấn một cách thuận tiện và nhanh chóng nhất."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:text="Hệ Thống Bán Hàng Online - Thế Giới Điện tử rất vui khi được phục vụ quý khách hàng tốt nhất !"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:text="Liên hệ"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_bgr_button_dangnhap"
+                android:textColor="@color/white"
+                android:layout_width="140dp"
+                android:id="@+id/bt_lienhe"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="28"
+        android:orientation="horizontal">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/menu_bottom_navigation"
+            android:background="@color/white"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

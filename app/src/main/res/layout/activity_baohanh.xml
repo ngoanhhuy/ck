@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#F4F1F1"
+    tools:context=".Activity.Baohanh">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:text="Hệ Thống Bán Hàng Online"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#2196F3"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Thế Giới Điện Tử"
+                android:layout_gravity="center"
+                android:textColor="#2196F3"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#2196F3"
+                android:textSize="25dp"
+                android:text="Chính sách bảo hành - bảo trì"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="- Với mục tiêu mang đến cho khách hàng sự hài lòng, an tâm khi mua hàng tại Hệ Thống Bán Hàng Online - Thế Giới Điện Tử, công ty chúng tôi có những chính sách chăm sóc khách hàng chu đáo và tận tâm. Trong thời gian sử dụng sản phẩm, nếu gặp bất kỳ trục trặc kỹ thuật gì, khách hàng có thể liên hệ trực tiếp đến Hệ Thống Bán Hàng Online - Thế Giới Điện Tử để được bảo hành hoặc điện thoại đến để được tư vấn miễn phí. Khách hàng đến bảo hành sản phẩm tại Hệ Thống Bán Hàng Online - Thế Giới Điện Tử phải mang theo phiếu mua hàng – bảo hành."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Các chính sách bảo hành, bảo trì đều áp dụng cho hàng hoá khi mua hàng online giống như bạn mua trực tiếp tại Hệ Thống Bán Hàng Online - Thế Giới Điện Tử"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:text="*Quy định về sản phẩm được bảo hành miễn phí:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Hệ Thống Bán Hàng Online - Thế Giới Điện Tử nhận bảo hành tất cả các sản phẩm từ thứ 2 đến thứ 6 hàng tuần"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Thứ 7 và chủ nhật Hệ Thống Bán Hàng Online - Thế Giới Điện Tử không nhận bảo hành tất cả các sản phẩm"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Thời gian bảo hành từ 8h - 17h hàng ngày"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="** Đối với những sản phẩm không được bảo hành miễn phí khách hàng vẫn có thể mang sản phẩm đến công ty bảo trì sửa chữa nhưng phải thanh toán phí."
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="** Phí vận chuyển giao trả hàng bảo hành, sửa chữa do khách hàng thanh toán."
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Mọi thắc mắc xin liên hệ:"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Hệ Thống Bán Hàng Online - Thế Giới Điện Tử"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Địa chỉ: Lai xá, Kim Chung, Hoài Đức , Hà Nội"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="ĐT: 03.36.02.86.30"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottom_menu"
+            app:menu="@menu/menu_bottom_navigation"
+            android:background="@color/white"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

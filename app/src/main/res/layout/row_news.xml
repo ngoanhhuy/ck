@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5pt"
+    android:padding="5pt"
+    android:background="@drawable/shape_vien_list_uudai"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="#F19898"
+            android:id="@+id/img_url"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#EC5E5E"
+                android:textStyle="bold"
+                android:id="@+id/txt_ten"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="#EC5E5E"
+                android:textStyle="bold"
+                android:id="@+id/txt_gia"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="#EC5E5E"
+                android:id="@+id/txt_mota"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

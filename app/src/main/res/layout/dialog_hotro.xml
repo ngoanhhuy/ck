@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hỗ trợ"
+        android:textSize="30dp"
+        android:textColor="#f00"
+        android:layout_marginBottom="10pt"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Nội dung cần hỗ trợ"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bgr_edt_dangnhap"
+        android:id="@+id/dialog_edt_noidungsms"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10pt"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Gửi"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/shape_bgr_button_dangnhap"
+            android:id="@+id/dialog_bt_gui"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/shape_bgr_button_dangnhap"
+            android:id="@+id/dialog_bt_huy"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#F4F1F1"
+    tools:context=".Activity.Tichdiem">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#2196F3"
+                android:textSize="30dp"
+                android:text="Hệ Thống Bán Hàng Online"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#2196F3"
+                android:textSize="30dp"
+                android:text="Thế Giới Điện Tử"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Tích điểm đổi xu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="* Hình thức tích điểm: Hệ thống chỉ tích điểm theo tiền chẵn trong đơn hàng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Ví dụ 1: Tỷ lệ 1 điểm = 10,000VNĐ, Khách hàng A mua đơn hàng có giá trị 5,000VNĐ thì số điểm tích được = 0"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="italic"
+                android:text="Ví dụ 2: Tỷ lệ 1 điểm = 10,000VNĐ, Khách hàng A mua đơn hàng giá trị 13,000VNĐ thì giá trị dùng để tích điểm chỉ là 10,000VNĐ = 1 điểm"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="* Tỷ lệ quy đổi điểm thành xu:"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="         1 điểm = 100 xu "
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="         100 xu = 100 VNĐ"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="     Khách hàng có thể thanh toán bằng số xu hiện có của mình trong đơn hàng."
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:id="@+id/bottom_menu"
+            android:layout_height="match_parent"
+            app:menu="@menu/menu_bottom_navigation"
+            android:background="@color/white"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
